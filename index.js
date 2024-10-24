@@ -61,8 +61,10 @@ const {listarAluno } = require("./alunos/listarAlunos")
 
 
 
-criarAluno("a92123","João","João@email.com","8499999-9999")
+criarAluno("1","João","João@emailcom","8499999-9999")
+criarAluno("2","Maria","Maria@email.com","9434314321")
 listarAluno()
-editarAlunos("a92123", "JoãoMaria", "JoãoMaria@email.com","83 99999-9999")
-listarAluno()
-excluirAlunos("a92123")
+
+// editarAlunos("2", "JoãoMaria", "JoãoMaria@email.com","83 99999-9999")
+// listarAluno()
+// excluirAlunos("a92123")
