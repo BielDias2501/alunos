@@ -5,7 +5,7 @@ var validator = require('validator')
 function criarAluno(matricula,nome,email,telefone) {
     const novoAluno = { matricula, nome , email , telefone}
     try{
-        if(!validator.isLength(matricula, {min:3 , min:5})){
+        if(!validator.isLength(matricula, {min:3 , max:5})){
             console.error("A matricula dever ter no minimo 3 caracteres e no maximo 5")
             return
         }
@@ -23,6 +23,7 @@ function criarAluno(matricula,nome,email,telefone) {
         }    
             
     alunos.push(novoAluno)
+    return novoAluno
 } catch (error) {
  console.error("Erro ao cadastrar dados",error.message)
 }
